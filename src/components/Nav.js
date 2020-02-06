@@ -8,20 +8,43 @@ import exit from "../img/exit.svg";
 class Nav extends Component {
   state = {};
 
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
+  }
+
   handleBurger = () => {
     const menu = document.querySelectorAll(".nav__burger img");
     const list = document.querySelector(".nav__list");
 
-    if (menu[1].classList.contains("inactive")) {
-      menu[1].classList.remove("inactive");
-      menu[0].classList.add("inactive");
-      list.classList.add("showMenu");
-    } else if (menu[0].classList.contains("inactive")) {
-      menu[0].classList.remove("inactive");
-      menu[1].classList.add("inactive");
-      list.classList.remove("showMenu");
-    }
+    menu.forEach(item => item.classList.toggle("inactive"));
+    list.classList.toggle("showMenu");
   };
+
+  initalNavBgc = "rgba(0, 0, 0, .2)";
+  scrolledNavBgc = "rgba(0, 0, 0, .7)";
+
+  // check
+  /*   handleScroll = e => {
+    console.log(e.target.value);
+    console.log(window.scrollY);
+    console.log(document.documentElement.style);
+
+    if (window.scrollY === 0) {
+      this.documentStyle.setProperty(
+        "--navbar-background-color",
+        this.initalNavbarBackgroundColor
+      );
+    } else {
+      this.documentStyle.setProperty(
+        "--navbar-background-color",
+        this.scrolledNavbarBackgroundColor
+      );
+    }
+  }; */
 
   render() {
     return (
