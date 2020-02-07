@@ -1,2 +1,2 @@
-*{margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box}.App{min-height:140vh}.header{height:100vh;background-image:url("../../img/fogpath.jpg");background-position:-150px 0;background-size:cover;background-repeat:no-repeat}
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=latin-ext");*{margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box}.App{min-height:800vh;font-family:'Open Sans', sans-serif}
 /*# sourceMappingURL=App.css.map */

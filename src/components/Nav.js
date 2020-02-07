@@ -2,14 +2,15 @@ import React, { Component } from "react";
 
 import "../styles/css/Nav.css";
 
-import burger from "../img/burger.svg";
-import exit from "../img/exit.svg";
-
 class Nav extends Component {
   state = {};
 
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
+
+    this.burgerIco = document.querySelector(".nav__burger");
+    this.burgerIcoLine = document.querySelectorAll(".nav__burger span");
+    this.nav = document.querySelector(".nav");
   }
 
   componentWillUnmount() {
@@ -17,48 +18,46 @@ class Nav extends Component {
   }
 
   handleBurger = () => {
-    const menu = document.querySelectorAll(".nav__burger img");
-    const list = document.querySelector(".nav__list");
+    this.burgerIco.classList.toggle("active");
 
-    menu.forEach(item => item.classList.toggle("inactive"));
+    const list = document.querySelector(".nav__list");
     list.classList.toggle("showMenu");
   };
 
-  initalNavBgc = "rgba(0, 0, 0, .2)";
-  scrolledNavBgc = "rgba(0, 0, 0, .7)";
-
-  // check
-  /*   handleScroll = e => {
-    console.log(e.target.value);
-    console.log(window.scrollY);
-    console.log(document.documentElement.style);
-
-    if (window.scrollY === 0) {
-      this.documentStyle.setProperty(
-        "--navbar-background-color",
-        this.initalNavbarBackgroundColor
+  handleScroll = e => {
+    if (window.scrollY < 100) {
+      this.burgerIcoLine.forEach(item =>
+        item.style.setProperty("background-color", "#000")
       );
+      this.nav.style.cssText =
+        "background-color: rgba(0, 0, 0, 0); color:black;";
+    } else if (window.scrollY >= 100 && window.scrollY < 200) {
+      this.nav.style.cssText =
+        "background-color: rgba(0, 0, 0, .2); color:white;";
+    } else if (window.scrollY >= 200 && window.scrollY < 300) {
+      this.nav.style.cssText =
+        "background-color: rgba(0, 0, 0, .4);color:white;";
     } else {
-      this.documentStyle.setProperty(
-        "--navbar-background-color",
-        this.scrolledNavbarBackgroundColor
+      this.nav.style.cssText =
+        "background-color: rgba(0, 0, 0, .7);color:white;";
+    }
+
+    if (window.scrollY >= 100) {
+      this.burgerIcoLine.forEach(item =>
+        item.style.setProperty("background-color", "#fff")
       );
     }
-  }; */
+  };
 
   render() {
     return (
       <>
         <nav className="nav">
           <p className="companyName">Template</p>
-          <div className="nav__burger">
-            <img src={burger} alt="menu icon" onClick={this.handleBurger} />
-            <img
-              src={exit}
-              alt="menu icon exit"
-              className="inactive"
-              onClick={this.handleBurger}
-            />
+          <div className="nav__burger" onClick={this.handleBurger}>
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
           <ul className="nav__list">
             <li className="nav__item">home</li>

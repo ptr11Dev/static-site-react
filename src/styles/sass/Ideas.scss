@@ -1,0 +1,33 @@
+.ideas {
+    background-color: #ddd;
+
+    &__title {
+        text-align: center;
+        padding: 30px;
+        margin-top: 80px;
+    }
+
+    &__logos {
+        display: flex;
+        padding-bottom: 30px;
+    }
+
+    &__arrowLeft,
+    &__arrowRight {
+        height: 85px;
+        width: 50px;
+        line-height: 85px;
+        text-align: center;
+        background-color: transparent;
+        border: none;
+    }
+
+    &__visibleLogos {
+        width: 90%;
+        background-image: url('../../img/icons.png');
+        background-size: 720px;
+        background-position: 0 0;
+        transition: .2s;
+    }
+
+}
