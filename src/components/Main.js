@@ -6,6 +6,7 @@ import cocktail from "../img/cocktail.svg";
 import stopwatch from "../img/stopwatch.svg";
 
 import Ideas from "./Ideas";
+import Gallery from "./Gallery";
 
 class Main extends Component {
   state = {};
@@ -80,60 +81,7 @@ class Main extends Component {
           </blockquote>
         </section>
         <Ideas />
-        <section className="gallery">
-          <h2 className="gallery__title">Gallery</h2>
-          <p className="gallery_descrip">
-            Some nice photos from around the internet. Lorem ipsum dolor, sit
-            amet consectetur adipisicing elit. Architecto, reiciendis!
-          </p>
-          <ul className="photoList">
-            <li className="photoList__item">
-              <img src="" alt="" className="photoList__photo" />
-            </li>
-            <li className="photoList__item">
-              <img src="" alt="" className="photoList__photo" />
-            </li>
-            <li className="photoList__item">
-              <img src="" alt="" className="photoList__photo" />
-            </li>
-            <li className="photoList__item">
-              <img src="" alt="" className="photoList__photo" />
-            </li>
-            <li className="photoList__item">
-              <img src="" alt="" className="photoList__photo" />
-            </li>
-            <li className="photoList__item">
-              <img src="" alt="" className="photoList__photo" />
-            </li>
-            <li className="photoList__item">
-              <img src="" alt="" className="photoList__photo" />
-            </li>
-            <li className="photoList__item">
-              <img src="" alt="" className="photoList__photo" />
-            </li>
-            <li className="photoList__item">
-              <img src="" alt="" className="photoList__photo" />
-            </li>
-            <li className="photoList__item">
-              <img src="" alt="" className="photoList__photo" />
-            </li>
-            <li className="photoList__item">
-              <img src="" alt="" className="photoList__photo" />
-            </li>
-            <li className="photoList__item">
-              <img src="" alt="" className="photoList__photo" />
-            </li>
-            <li className="photoList__item">
-              <img src="" alt="" className="photoList__photo" />
-            </li>
-            <li className="photoList__item">
-              <img src="" alt="" className="photoList__photo" />
-            </li>
-            <li className="photoList__item">
-              <img src="" alt="" className="photoList__photo" />
-            </li>
-          </ul>
-        </section>
+        <Gallery />
       </main>
     );
   }
