@@ -2,8 +2,6 @@ import React, { Component } from "react";
 
 import Nav from "./Nav";
 
-import "../styles/css/Header.css";
-
 class Header extends Component {
   state = {};
   render() {

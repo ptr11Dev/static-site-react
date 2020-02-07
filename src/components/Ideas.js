@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 
-import "../styles/css/Ideas.css";
-
 import left from "../img/left.svg";
 import right from "../img/right.svg";
 
