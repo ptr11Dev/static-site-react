@@ -21,7 +21,7 @@ class Team extends Component {
     return (
       <section className="team">
         <h2 className="team__title">Team Members</h2>
-        <p className="team__descrip">
+        <p className="team__text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quas
           iste vero. Quod hic minima ut eligendi autem repellendus alias.
         </p>

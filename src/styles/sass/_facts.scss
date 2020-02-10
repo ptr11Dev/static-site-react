@@ -4,13 +4,9 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: #fff;
+  color: $text-color;
   text-align: center;
   padding: 40px 0;
-
-  &__title {
-    margin-bottom: 30px;
-  }
 
   &__container {
     width: 90%;
@@ -21,9 +17,9 @@
 }
 
 .fact {
-  margin: 40px 0;
+  margin: 50px 0;
 
-  &__number {
+  &__amount {
     font-weight: bold;
     font-size: 24px;
   }

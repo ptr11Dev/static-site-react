@@ -60,7 +60,7 @@ class News extends Component {
               {article.postDate}
             </time>
             <h3 className="post__title">{article.title}</h3>
-            <p className="post__content">{article.content}</p>
+            <p className="post__text">{article.content}</p>
           </article>
         ))}
       </section>

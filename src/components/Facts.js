@@ -6,24 +6,24 @@ const Facts = () => {
       <h2 className="facts__title">Facts &amp; Numbers</h2>
       <div className="facts__container">
         <div className="fact">
-          <div className="fact__number">33</div>
+          <div className="fact__amount">33</div>
           <div className="fact__line"></div>
-          <div className="fact__title">clients</div>
+          <h3 className="fact__title">clients</h3>
         </div>
         <div className="fact">
-          <div className="fact__number">87</div>
+          <div className="fact__amount">87</div>
           <div className="fact__line"></div>
-          <div className="fact__title">successful projects</div>
+          <h3 className="fact__title">successful projects</h3>
         </div>
         <div className="fact">
-          <div className="fact__number">17</div>
+          <div className="fact__amount">17</div>
           <div className="fact__line"></div>
-          <div className="fact__title">team members</div>
+          <h3 className="fact__title">team members</h3>
         </div>
         <div className="fact">
-          <div className="fact__number">1</div>
+          <div className="fact__amount">1</div>
           <div className="fact__line"></div>
-          <div className="fact__title">goal</div>
+          <h3 className="fact__title">goal</h3>
         </div>
       </div>
     </section>

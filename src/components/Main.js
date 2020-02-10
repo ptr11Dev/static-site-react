@@ -2,9 +2,9 @@ import React, { Component } from "react";
 
 import road from "../img/road.svg";
 
+import Services from "./Services";
 import Ideas from "./Ideas";
 import Gallery from "./Gallery";
-import Services from "./Services";
 import Team from "./Team";
 import Facts from "./Facts";
 import News from "./News";

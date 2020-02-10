@@ -35,7 +35,7 @@ const Services = () => {
       </section>
       <section className="famous">
         <h2 className="famous__title">Famous quotes</h2>
-        <p className="famous__descrip">
+        <p className="famous__text">
           The insight and experience of others is a valuable source of
           inspiration and motivation. And learning from successful leaders and
           entrepreneurs is a fantastic way to grow.

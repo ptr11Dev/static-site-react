@@ -1,6 +1,6 @@
 .news {
   margin: 50px 0;
-  color: white;
+  color: $text-color;
 }
 
 .post {
@@ -14,17 +14,12 @@
 
   &__date {
     display: inline-block;
-    margin-bottom: 10px;
     font-size: 12px;
   }
 
-  &__title {
-    margin-bottom: 20px;
-  }
-
-  &__content {
+  &__text {
     width: 80%;
     margin: 0 auto;
-    line-height: 28px;
+    line-height: $text-line-height;
   }
 }

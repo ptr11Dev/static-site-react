@@ -24,7 +24,7 @@ class Gallery extends Component {
     return (
       <section className="gallery">
         <h2 className="gallery__title">Gallery</h2>
-        <p className="gallery__descrip">
+        <p className="gallery__text">
           Some nice photos from around the internet. Lorem ipsum dolor, sit amet
           consectetur adipisicing elit. Architecto, reiciendis!
         </p>

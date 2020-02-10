@@ -31,24 +31,24 @@
     padding: 5px;
     margin: 5px 20px 5px 40px;
     width: 60%;
-    color: grey;
+    color: #aaa;
 
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #aaa;
   }
 
   &__btn {
     display: block;
     width: 30%;
-    height: 35px;
-    margin: 10px auto;
+    height: 30px;
+    margin: 10px 40px;
     text-transform: uppercase;
     font-weight: bold;
 
     background-color: transparent;
     color: #efefef;
-    border: 2px solid grey;
+    border: 1px solid #aaa;
   }
 }
 
@@ -65,10 +65,10 @@
   text-align: center;
 
   background-color: #151515;
-  color: white;
+  color: $text-color;
   border: 3px solid white;
 
-  & p {
+  p {
     margin-bottom: 5px;
   }
 }
@@ -106,33 +106,28 @@
     width: 90%;
     margin: 30px auto;
 
-    background-color: grey;
+    background-color: #aaa;
   }
 
   &__text {
     text-align: center;
   }
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+
+    list-style-type: none;
+  }
+
+  &__item {
+    color: #aaa;
+    text-decoration: none;
+  }
 }
 
 .copy {
+  margin: 8px 10px;
   font-size: 12px;
 }
-/* .motto {
-  background-color: blue;
-} */
-
-/* .footerForm {
-  background-color: red;
-} */
-
-/* .footerLinks {
-  background-color: #ddd;
-} */
-
-/* .footerSocials {
-  background-color: green;
-} */
-
-/* .footerEnd {
-  background-color: yellow;
-} */

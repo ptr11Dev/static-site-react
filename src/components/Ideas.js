@@ -10,7 +10,7 @@ class Ideas extends Component {
     this.logos = document.querySelector(".ideas__visibleLogos");
   }
 
-  //important - .setState as is used here = we do not wait for the state to be changed (async)
+  //important - .setState as it's used here = we do not wait for the state to be changed (async)
   handleLeftArrow = () => {
     this.setState(
       {

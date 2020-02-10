@@ -9,3 +9,12 @@
 .App {
   font-family: "Open Sans", sans-serif;
 }
+
+h2 {
+  margin-bottom: $h2-margins;
+}
+
+h3 {
+  margin-top: $h3-margins/2;
+  margin-bottom: $h3-margins;
+}
