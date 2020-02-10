@@ -1,0 +1,36 @@
+.facts {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../../img/goal.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 40px 0;
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgba(200, 200, 200, 0.5);
+    padding: 10px;
+  }
+}
+
+.fact {
+  margin: 40px 0;
+
+  &__number {
+    font-weight: bold;
+    font-size: 24px;
+  }
+  &__line {
+    background-color: #151515;
+    width: 60px;
+    height: 4px;
+    margin: 10px auto;
+  }
+}

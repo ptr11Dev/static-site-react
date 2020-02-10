@@ -6,6 +6,8 @@ import Ideas from "./Ideas";
 import Gallery from "./Gallery";
 import Services from "./Services";
 import Team from "./Team";
+import Facts from "./Facts";
+import News from "./News";
 
 class Main extends Component {
   state = {};
@@ -28,6 +30,8 @@ class Main extends Component {
         <Ideas />
         <Gallery />
         <Team />
+        <Facts />
+        <News />
       </main>
     );
   }
