@@ -13,8 +13,7 @@ const backgrounds = importAll(require.context("../img/", false, /\.jpg$/));
 // I'm adding this variable to have possibility to change shadow on all articles at once there is - code to copy and add to article's background
 // bgc: `${shadowOnBackgrounds} ,url(${backgrounds["filename.jpg"]})`
 
-const shadowOnBackgrounds =
-  "linear-gradient(rgba(210,210,210,0.4),rgba(210,210,210,0.4))";
+const shadowOnBackgrounds = "linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4))";
 
 const myArticles = [
   {

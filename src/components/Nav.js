@@ -58,10 +58,26 @@ class Nav extends Component {
             <span></span>
           </div>
           <ul className="nav__list">
-            <li className="nav__item">home</li>
-            <li className="nav__item">about</li>
-            <li className="nav__item">stories</li>
-            <li className="nav__item">hello</li>
+            <li className="nav__item">
+              <a className="nav__link" href="/">
+                home
+              </a>
+            </li>
+            <li className="nav__item">
+              <a className="nav__link" href="/">
+                about
+              </a>
+            </li>
+            <li className="nav__item">
+              <a className="nav__link" href="/">
+                stories
+              </a>
+            </li>
+            <li className="nav__item">
+              <a className="nav__link" href="/">
+                hello
+              </a>
+            </li>
           </ul>
         </nav>
       </>

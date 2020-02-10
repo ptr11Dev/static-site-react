@@ -1,0 +1,138 @@
+.footer {
+  background-color: #151515;
+  color: grey;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.motto {
+  &__company {
+    padding: 20px;
+    color: #fefefe;
+  }
+
+  &__content {
+    width: 60%;
+    margin-left: 40px;
+    font-size: 14px;
+  }
+}
+
+.footerForm {
+  margin-top: 30px;
+
+  &__subject,
+  &__mail,
+  &__message {
+    font-family: arial, sans-serif;
+    padding: 5px;
+    margin: 5px 20px 5px 40px;
+    width: 60%;
+    color: grey;
+
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid grey;
+  }
+
+  &__btn {
+    display: block;
+    width: 30%;
+    height: 35px;
+    margin: 10px auto;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    background-color: transparent;
+    color: #efefef;
+    border: 2px solid grey;
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+
+  padding: 15px;
+  font-size: 12px;
+  text-align: center;
+
+  background-color: #151515;
+  color: white;
+  border: 3px solid white;
+
+  & p {
+    margin-bottom: 5px;
+  }
+}
+
+.modalOn {
+  display: block;
+}
+
+.footerLinks,
+.footerSocials {
+  width: 40%;
+
+  &__list {
+    list-style-type: none;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__item {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 12px;
+  }
+}
+
+.footerEnd {
+  width: 100%;
+  font-size: 14px;
+
+  &__line {
+    display: block;
+    height: 2px;
+    width: 90%;
+    margin: 30px auto;
+
+    background-color: grey;
+  }
+
+  &__text {
+    text-align: center;
+  }
+}
+
+.copy {
+  font-size: 12px;
+}
+/* .motto {
+  background-color: blue;
+} */
+
+/* .footerForm {
+  background-color: red;
+} */
+
+/* .footerLinks {
+  background-color: #ddd;
+} */
+
+/* .footerSocials {
+  background-color: green;
+} */
+
+/* .footerEnd {
+  background-color: yellow;
+} */
