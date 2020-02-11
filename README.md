@@ -1,68 +1,84 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Static Website - React
 
-## Available Scripts
+> This project is an example of static website made in React
 
-In the project directory, you can run:
+## Table of contents
 
-### `npm start`
+- [General info](#general-info)
+- [Technologies](#technologies)
+- [Features](#features)
+- [Contact](#contact)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## General info
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+It was my first project of static website created with React.js.
 
-### `npm test`
+## Technologies
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React.js - version 16.12.0
+- Simple react lightbox - version 2.2.0
 
-### `npm run build`
+## Features
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+In this section I'd like to present a few solutions that I've used in the project.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- Simple React Lightbox
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Used as it is described at: https://www.npmjs.com/package/simple-react-lightbox
 
-### `npm run eject`
+- Importing multiple images
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Instead of importing each image with import - like this:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```sh
+import gal1 from '../img/gallery/gal1.jpg'
+import gal2 from '../img/gallery/gal1.jpg'
+import gal3 from '../img/gallery/gal1.jpg'
+...
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+I've used such function:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```sh
+function importAll(arg) {
+  let images = {};
+  arg.keys().forEach(item => {
+    images[item.replace("./", "")] = arg(item);
+  });
+  return images;
+}
 
-## Learn More
+const images = importAll(require.context("../img/gallery", false, /\.jpg$/));
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Where:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. I'm using require.context as it's described at: https://webpack.js.org/guides/dependency-management/#requirecontext. As arguments I'm passing folder with all the images, information that descending folders shouldn't be checked and information that I'm looking for .jpg files.
+2. Function importAll is using keys() method which returns an array of a given object's own enumerable property names, iterated in the same order that a normal loop would.
+3. Using both information along with replace() method we can create an array with pairs 'filename: filepath'.
 
-### Code Splitting
+- News component that renders (using map method) posts from an array with all the information about the post.
+- Using fetch to get basic information from https://randomuser.me/
+- Using callback in a setState
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+```sh
+this.setState(
+      {
+        startPosition: this.state.startPosition + 240
+      },
+      () => {
+        this.logos.style.setProperty(
+          "background-position",
+          `${this.state.startPosition}px 0`
+        );
+      }
+    );
+```
 
-### Analyzing the Bundle Size
+These two articles are very important to read:
+https://medium.learnreact.com/setstate-takes-a-callback-1f71ad5d2296
+https://reactjs.org/docs/react-component.html
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+## Contact
 
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Created by [Piotr Kaczmarek](piotrkaczmarek.dev@gmail.com) - feel free to contact!
