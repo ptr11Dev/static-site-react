@@ -8,18 +8,10 @@
       rgba(0, 0, 0, 0.3)
     ),
     url("../../img/fogpath.jpg");
-  background-position: 0 0, -300px 0;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
   position: relative;
-
-  @media (min-width: 800px) {
-    background-position: 0 0;
-  }
-  @media (orientation: landscape) {
-    background-position: center;
-  }
 }
 
 .banner {
@@ -62,12 +54,5 @@
     color: #ddd;
     font-weight: bold;
     transition: 0.3s;
-
-    &:hover {
-      @media (min-width: 1024px) {
-        background-color: white;
-        color: black;
-      }
-    }
   }
 }

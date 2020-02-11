@@ -33,27 +33,3 @@
     height: 100%;
   }
 }
-
-@media (min-width: 480px) {
-  .photoList {
-    height: 150px;
-  }
-}
-
-@media (min-width: 800px) {
-  .photoList {
-    &__photo {
-      cursor: pointer;
-    }
-  }
-}
-
-@media (min-width: 1024px) {
-  .photoList {
-    height: 300px;
-
-    &__item {
-      width: 50%;
-    }
-  }
-}

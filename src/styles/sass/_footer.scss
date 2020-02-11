@@ -50,13 +50,6 @@
     color: #efefef;
     border: 1px solid #aaa;
     transition: 0.3s;
-
-    &:hover {
-      @media (min-width: 1024px) {
-        background-color: white;
-        color: black;
-      }
-    }
   }
 }
 
@@ -100,7 +93,7 @@
   &__item {
     color: #aaa;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 0.75em;
   }
 }
 

@@ -1,0 +1,119 @@
+@media (min-width: $bp-small) {
+  h1 {
+    font-size: 32px * 1.2;
+  }
+}
+@media (orientation: landscape) {
+  .footer {
+    padding-top: 30px;
+  }
+
+  .footerLinks,
+  .footerSocials,
+  .footerForm,
+  .motto {
+    width: 25%;
+  }
+
+  .footerLinks,
+  .footerSocials {
+    padding: 30px 0 30px 40px;
+  }
+}
+
+@media (min-width: $bp-small-2) {
+  .facts__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .fact {
+    width: 50%;
+  }
+  .photoList {
+    height: 150px;
+  }
+  .members {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .member {
+    width: 50%;
+  }
+
+  .famous__text {
+    margin: 0 2em 30px;
+  }
+}
+
+@media (min-width: $bp-small-3) {
+  .footerLinks,
+  .footerSocials,
+  .footerForm,
+  .motto {
+    width: 25%;
+  }
+
+  .footerLinks,
+  .footerSocials {
+    padding: 30px 0 10px 40px;
+  }
+}
+
+// @media(min-width: )
+
+/* 
+@media (min-width: 768px) {
+  .nav__item {
+    font-size: 22px;
+  }
+}
+@media (min-width: 768px) {
+  .companyName {
+    font-size: 22px;
+  }
+  h1 {
+    font-size: 32px * 2;
+  }
+}
+@media (min-width: 800px) {
+  .header {
+    background-position: 0 0;
+  }
+}
+@media (min-width: 800px) {
+  .photoList {
+    &__photo {
+      cursor: pointer;
+    }
+  }
+}
+@media (min-width: 800px) {
+  a:hover {
+    cursor: pointer;
+  }
+  button:hover {
+    cursor: pointer;
+  }
+}
+@media (min-width: 1024px) {
+  .footerForm__btn:hover {
+    background-color: white;
+    color: black;
+  }
+}
+
+@media (min-width: 1024px) {
+  .photoList {
+    height: 300px;
+    &__item {
+      width: 50%;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .banner__btn:hover {
+    background-color: white;
+    color: black;
+  }
+} */
