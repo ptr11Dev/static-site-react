@@ -61,5 +61,13 @@
     padding: 5px 20px;
     color: #ddd;
     font-weight: bold;
+    transition: 0.3s;
+
+    &:hover {
+      @media (min-width: 1024px) {
+        background-color: white;
+        color: black;
+      }
+    }
   }
 }

@@ -49,6 +49,14 @@
     background-color: transparent;
     color: #efefef;
     border: 1px solid #aaa;
+    transition: 0.3s;
+
+    &:hover {
+      @media (min-width: 1024px) {
+        background-color: white;
+        color: black;
+      }
+    }
   }
 }
 
