@@ -1,0 +1,8 @@
+@mixin media-text-size($media, $text-size-mult, $line-height-mult) {
+  @media (min-width: $media) {
+    font-size: $text-size * $text-size-mult;
+    line-height: $text-line-height * $line-height-mult;
+  }
+}
+
+// @include media-text-size(768px, 2, 2);

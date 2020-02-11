@@ -18,3 +18,15 @@ h3 {
   margin-top: $h3-margins/2;
   margin-bottom: $h3-margins;
 }
+
+@media (min-width: 384px) {
+  h1 {
+    font-size: 32px * 1.2;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 32px * 2;
+  }
+}

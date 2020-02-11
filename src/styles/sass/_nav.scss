@@ -16,6 +16,10 @@
     list-style-type: none;
     margin-top: 10vh;
     letter-spacing: 4px;
+
+    @media (min-width: 768px) {
+      font-size: 22px;
+    }
   }
 
   &__list {
@@ -44,6 +48,10 @@
   color: $text-color;
   letter-spacing: 2px;
   font-weight: bold;
+
+  @media (min-width: 768px) {
+    font-size: 22px;
+  }
 }
 
 .showMenu {

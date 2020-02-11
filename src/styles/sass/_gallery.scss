@@ -1,9 +1,15 @@
 .gallery {
   text-align: center;
-  margin-top: 50px;
+  margin: 50px auto 0;
+  max-width: 1024px;
 
   &__text {
     line-height: $text-line-height;
+    width: 90%;
+    margin: 0 auto;
+    font-size: $text-size;
+
+    @include media-text-size(768px, 1.3, 1.3);
   }
 }
 
@@ -11,19 +17,31 @@
   display: flex;
   margin-top: 30px;
 
-  overflow: scroll;
+  overflow-x: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   height: 100px;
 
   &__item {
     list-style: none;
-    width: 33%;
     flex-shrink: 0;
   }
 
   &__photo {
-    width: 100%;
     height: 100%;
-    object-fit: cover;
+  }
+}
+
+@media (min-width: 480px) {
+  .photoList {
+    height: 150px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .photoList {
+    height: 300px;
   }
 }
