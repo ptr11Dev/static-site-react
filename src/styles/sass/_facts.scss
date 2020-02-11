@@ -7,6 +7,8 @@
   color: $text-color;
   text-align: center;
   padding: 40px 0;
+  max-width: 1024px;
+  margin: 0 auto;
 
   &__container {
     width: 90%;
