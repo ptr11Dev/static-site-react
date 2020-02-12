@@ -16,7 +16,7 @@ class Header extends Component {
             town off the coast of Oregon, as its inhabitants try to learn their
             town's dark secret in order to stop it.
           </p>
-          <a href="/" className="banner__btn">
+          <a href="!#" className="banner__btn">
             read more
           </a>
         </div>

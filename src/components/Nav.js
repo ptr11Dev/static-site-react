@@ -59,7 +59,7 @@ class Nav extends Component {
           </div>
           <ul className="nav__list">
             <li className="nav__item">
-              <a className="nav__link" href="/#">
+              <a className="nav__link" href="!#">
                 home
               </a>
             </li>
@@ -69,12 +69,12 @@ class Nav extends Component {
               </a>
             </li>
             <li className="nav__item">
-              <a className="nav__link" href="# ">
+              <a className="nav__link" href="!#">
                 stories
               </a>
             </li>
             <li className="nav__item">
-              <a className="nav__link" href=" #">
+              <a className="nav__link" href="!#">
                 hello
               </a>
             </li>
