@@ -22,14 +22,15 @@
     display: none;
   }
 
-  height: 100px;
+  // height: 100px;
 
   &__item {
-    list-style: none;
     flex-shrink: 0;
+    width: 40%;
+    list-style: none;
   }
 
   &__photo {
-    height: 100%;
+    width: 100%;
   }
 }
