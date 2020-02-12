@@ -59,61 +59,46 @@
   }
 }
 
-// @media(min-width: )
-
-/* 
-@media (min-width: 768px) {
+@media (min-width: $bp-med-2) {
   .nav__item {
-    font-size: 22px;
+    font-size: 1.5em;
   }
-}
-@media (min-width: 768px) {
   .companyName {
-    font-size: 22px;
+    font-size: 1.5em;
   }
   h1 {
-    font-size: 32px * 2;
+    font-size: 4em;
   }
 }
-@media (min-width: 800px) {
+
+@media (min-width: $bp-large) {
   .header {
     background-position: 0 0;
   }
-}
-@media (min-width: 800px) {
   .photoList {
     &__photo {
       cursor: pointer;
     }
   }
-}
-@media (min-width: 800px) {
-  a:hover {
-    cursor: pointer;
-  }
+  a:hover,
   button:hover {
     cursor: pointer;
   }
 }
-@media (min-width: 1024px) {
+
+@media (min-width: $bp-xl-2) {
   .footerForm__btn:hover {
     background-color: white;
     color: black;
   }
-}
-
-@media (min-width: 1024px) {
   .photoList {
     height: 300px;
     &__item {
       width: 50%;
     }
   }
-}
-
-@media (min-width: 1024px) {
   .banner__btn:hover {
     background-color: white;
     color: black;
   }
-} */
+}
