@@ -54,27 +54,27 @@ class Footer extends Component {
           <h4 className="footerLinks__title">Links</h4>
           <ul className="footerLinks__list">
             <li>
-              <a href="!#" className="footerLinks__item">
+              <a href="# " className="footerLinks__item">
                 Home
               </a>
             </li>
             <li>
-              <a href="!#" className="footerLinks__item">
+              <a href="# " className="footerLinks__item">
                 About
               </a>
             </li>
             <li>
-              <a href="!#" className="footerLinks__item">
+              <a href="# " className="footerLinks__item">
                 Services
               </a>
             </li>
             <li>
-              <a href="!#" className="footerLinks__item">
+              <a href="# " className="footerLinks__item">
                 Contact
               </a>
             </li>
             <li>
-              <a href="!#" className="footerLinks__item">
+              <a href="# " className="footerLinks__item">
                 Partners
               </a>
             </li>
@@ -85,37 +85,37 @@ class Footer extends Component {
           <h4 className="footerSocials__title">Social</h4>
           <ul className="footerSocials__list">
             <li>
-              <a href="!#" className="footerSocials__item">
+              <a href="# " className="footerSocials__item">
                 Facebook
               </a>
             </li>
             <li>
-              <a href="!#" className="footerSocials__item">
+              <a href="# " className="footerSocials__item">
                 Twitter
               </a>
             </li>
             <li>
-              <a href="!#" className="footerSocials__item">
+              <a href="# " className="footerSocials__item">
                 Github
               </a>
             </li>
             <li>
-              <a href="!#" className="footerSocials__item">
+              <a href="# " className="footerSocials__item">
                 Pinterest
               </a>
             </li>
             <li>
-              <a href="!#" className="footerSocials__item">
+              <a href="# " className="footerSocials__item">
                 Linkedin
               </a>
             </li>
             <li>
-              <a href="!#" className="footerSocials__item">
+              <a href="# " className="footerSocials__item">
                 Dribble
               </a>
             </li>
             <li>
-              <a href="!#" className="footerSocials__item">
+              <a href="# " className="footerSocials__item">
                 Flickr
               </a>
             </li>
@@ -131,22 +131,22 @@ class Footer extends Component {
           </p>
           <ul className="footerEnd__list">
             <li>
-              <a href="!#" className="footerEnd__item">
+              <a href="# " className="footerEnd__item">
                 Terms
               </a>
             </li>
             <li>
-              <a href="!#" className="footerEnd__item">
+              <a href="# " className="footerEnd__item">
                 Privacy Policy
               </a>
             </li>
             <li>
-              <a href="!#" className="footerEnd__item">
+              <a href="# " className="footerEnd__item">
                 Contact
               </a>
             </li>
             <li>
-              <a href="!#" className="footerEnd__item">
+              <a href="# " className="footerEnd__item">
                 Job
               </a>
             </li>
