@@ -9,11 +9,58 @@ class Nav extends Component {
     this.burgerIco = document.querySelector(".nav__burger");
     this.burgerIcoLine = document.querySelectorAll(".nav__burger span");
     this.nav = document.querySelector(".nav");
+
+    // section changer
+    this.sections = [...document.querySelectorAll("section")];
+    this.navItems = [...document.querySelectorAll(".nav__item")];
+    this.header = document.querySelector(".header");
+
+    console.log(this.sections);
+    this.selectedSection = null;
+
+    this.navItems.forEach((item, index) =>
+      item.addEventListener("click", () => {
+        this.selectedSection = index;
+      })
+    );
   }
 
   componentWillUnmount() {
     window.removeEventListener("scroll", this.handleScroll);
   }
+
+  handleMoveUserToSection = () => {
+    switch (this.selectedSection) {
+      case 0:
+        this.header.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+        break;
+      case 1:
+        this.sections[4].scrollIntoView({
+          behavior: "smooth",
+          block: "center"
+        });
+        break;
+      case 2:
+        this.sections[5].scrollIntoView({
+          behavior: "smooth",
+          block: "center"
+        });
+        break;
+      case 3:
+        this.sections[6].scrollIntoView({
+          behavior: "smooth",
+          block: "center"
+        });
+        break;
+
+      default:
+        console.log("błąd");
+        break;
+    }
+  };
 
   handleBurger = () => {
     this.burgerIco.classList.toggle("active");
@@ -58,25 +105,17 @@ class Nav extends Component {
             <span></span>
           </div>
           <ul className="nav__list">
-            <li className="nav__item">
-              <a className="nav__link" href="# ">
-                home
-              </a>
+            <li className="nav__item" onClick={this.handleMoveUserToSection}>
+              home
             </li>
-            <li className="nav__item">
-              <a className="nav__link" href="# ">
-                about
-              </a>
+            <li className="nav__item" onClick={this.handleMoveUserToSection}>
+              gallery
             </li>
-            <li className="nav__item">
-              <a className="nav__link" href="# ">
-                stories
-              </a>
+            <li className="nav__item" onClick={this.handleMoveUserToSection}>
+              team
             </li>
-            <li className="nav__item">
-              <a className="nav__link" href="# ">
-                hello
-              </a>
+            <li className="nav__item" onClick={this.handleMoveUserToSection}>
+              facts
             </li>
           </ul>
         </nav>
