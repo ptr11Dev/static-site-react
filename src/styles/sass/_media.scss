@@ -86,6 +86,38 @@
   }
 }
 
+@media (min-width: $bp-xl) {
+  //major breakpoint
+  .nav {
+    padding: 0;
+    &__list {
+      position: static;
+      flex-direction: row;
+      height: 100%;
+      width: 100%;
+      background-color: transparent;
+    }
+
+    &__item {
+      margin: 0;
+      width: 25%;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    &__burger {
+      display: none;
+    }
+  }
+
+  .companyName {
+    line-height: 65px;
+    margin-left: 1em;
+    width: 25vw;
+  }
+}
+
 @media (min-width: $bp-xl-2) {
   .footerForm__btn:hover {
     background-color: white;
