@@ -1,6 +1,7 @@
 # Static Website - React
 
 > This project is an example of static website made in React
+> Live version is available at: https://ptr11dev.github.io/static-site-react/
 
 ## Table of contents
 
