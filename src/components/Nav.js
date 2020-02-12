@@ -15,7 +15,6 @@ class Nav extends Component {
     this.navItems = [...document.querySelectorAll(".nav__item")];
     this.header = document.querySelector(".header");
 
-    console.log(this.sections);
     this.selectedSection = null;
 
     this.navItems.forEach((item, index) =>
@@ -57,7 +56,9 @@ class Nav extends Component {
         break;
 
       default:
-        console.log("błąd");
+        console.log(
+          "Please contact me at piotrkaczmarek.dev@gmail.com with this error."
+        );
         break;
     }
   };
