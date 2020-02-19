@@ -39,19 +39,19 @@ class Nav extends Component {
       case 1:
         this.sections[4].scrollIntoView({
           behavior: "smooth",
-          block: "center"
+          block: "start"
         });
         break;
       case 2:
         this.sections[5].scrollIntoView({
           behavior: "smooth",
-          block: "center"
+          block: "start"
         });
         break;
       case 3:
         this.sections[6].scrollIntoView({
           behavior: "smooth",
-          block: "center"
+          block: "start"
         });
         break;
 
